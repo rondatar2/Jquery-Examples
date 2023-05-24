@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="body">
+    <div id="timer">5</div>
+    <div class="spinner"></div>
+    <h2 class="title">Activity 7</h2>
+    <div class="container">
+        <div class="grid jquery">JQuery</div>
+        <div class="grid description">Description</div>
+        <div class="grid example">Example</div>
+        <div class="grid type">CSS Manipulation</div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'.example1'</span>)</span>.css<span id="green">(<span
+                        id="red">"backgroundColor"</span><span id="dark">,</span><span id="red">
+                        "#DF2E38"</span>)</span></span></div>
+        <div class="grid description small">Change the background color of the selected HTML Element</div>
+        <div class="grid effect example cssexample1 small">Double click to change background</div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'#box1'</span>)</span>.width<span id="green">(</span>example2width<span
+                    id="green">)</span></span></div>
+        <div class="grid description small">Change the width of the selected HTML Element</div>
+        <div class="grid example small">
+            <div id="box1">Click me</div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'#box2'</span>)</span>.height<span id="green">(</span>example3height<span
+                    id="green">)</span></span></div>
+        <div class="grid description small">Change the height of the selected HTML Element</div>
+        <div class="grid example small">
+            <div id="box2">Hover me</div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span id="red">'#box3'</span>)</span>.css<span
+                    id="green">(<span id="red">'right'</span><span id="dark">,</span><span id="red">
+                        '0'</span>)</span></span></div>
+        <div class="grid description small">Change the position to the right of the selected HTML Element</div>
+        <div class="grid example cssexample4 small">
+            <div id="box3container">
+                <div id="box3">Left</div>
+            </div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span id="red">'#box4'</span>)</span>.css<span
+                    id="green">(<span id="red">'border-radius'</span><span id="dark">,</span><span id="red">
+                        '100%'</span>)</span></span></div>
+        <div class="grid description small">Change the shape of the selected HTML Elements</div>
+        <div class="grid example cssexample5 small">
+            <div id="box4">Square</div>
+        </div>
+        <div class="grid type">Effects</div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'#toggle-img'</span>)</span>.toggle<span id="green">()</span></span></div>
+        <div class="grid description small">The toggle() method toggles between hide() and show() for the selected
+            elements.</div>
+        <div class="grid example effectsexample1 small">
+            <img id="toggle-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUQRgx0P6e9sLEVplCW7xQYVB-spmLWhX1Q&usqp=CAU"
+                alt=""><br>
+            <button id="toggle">Hide/Show</button>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">"#smallbox"</span>)</span>.animate<span id="green">(<span id="blue">{<span
+                            id="dark">right: </span><span id="red">'0px'</span>}</span>)</span></div>
+        <div class="grid description small">The .animate() method allows us to create animation effects on any numeric
+            CSS property</div>
+        <div class="grid example effectsexample2 small">
+            <button id="animation">Start</button>
+            <div id="containeranimation">
+                <div id="smallbox"></div>
+            </div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'#hidden'</span>)</span>.delay<span id="green">(5000)</span>.fadeIn<span
+                    id="green">()</span></span></div>
+        <div class="grid description small">The delay() method sets a timer to delay the execution of the next item in
+            the queue.
+        </div>
+        <div class="grid example effectsexample3 small">
+            <button id="delay">Click and wait for 5 seconds</button>
+            <div id="hidden">👻</div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'#fade'</span>)</span>.fadeOut<span id="green">()</span></span></div>
+        <div class="grid description small">The fadeOut() method gradually changes the opacity, for selected elements,
+            from visible to hidden (fading effect).</div>
+        <div class="grid example fadein effectsexample4 small">
+            <div id="fade">Hover to FadeOut</div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'.slide'</span>)</span>.slideToggle<span id="green">(</span><span
+                    id="red">'slow'</span></span><span id="green">)</span></span></div>
+        <div class="grid description small">Display or hide the matched elements with a sliding motion.</div>
+        <div class="grid example effectsexample5 small">
+            <div class="slide-btn paragraph">Click to slide the elements</div>
+            <div class="slide">Nice!</div>
+        </div>
+        <div class="grid type">DOM Manipulation</div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'.paragraph'</span>)</span>.clone<span id="green">()</span>.appendTo</span>
+            <div class="span" id="green">(<span id="red">'#paragraphcontainer'</span>)</div>
+        </div>
+        <div class="grid description small">The clone() method makes a copy of selected elements, including child nodes,
+            text and attributes.</div>
+        <div class="grid example domexample1 small">
+            <button id="btn">Click me</button><span><button id="reset">Reset</button></span>
+            <div id="paragraphcontainer">
+                <p class="paragraphs">this is a paragraph</p>
+            </div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span id="red">'#h4'</span>)</span>.text<span
+                    id="green">(</span><span id="red">"I'm Hovered"</span><span id="green">)</span></span></div>
+        <div class="grid description small">Changing the text of the selected HTML Elements</div>
+        <div class="grid example domexample2 small">
+            <h4 id="h4">Hover me</h4>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'#sample'</span>)</span>.html<span id="green">(</span><span id="red"><span
+                        id="sampletag"></span></span><span id="green">)</span></span></div>
+        <div class="grid description small">The html() method sets or returns the content (innerHTML) of the selected
+            elements.</div>
+        <div class="grid example domexample3 small">
+            <div class="flex">
+                <button class="htmlbtn">Button</button>
+                <button class="htmlanchor">Anchor Tag</button>
+                <button class="htmlradio">Radio Button</button>
+                <button class="htmltext">Text Box</button>
+            </div>
+            <div id="sample">
+                <button>This is a button</button>
+            </div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span id="red">'h5'</span>)</span>.remove<span
+                    id="green">()</span></span></div>
+        <div class="grid description small">The remove() method removes the selected elements, including all text and
+            child nodes</div>
+        <div class="grid example domexample4 small">
+            <h5>Hello World</h5>
+            <h5 id="red">Hello World</h5>
+            <h5 id="blue">Hello World</h5>
+            <h5 id="green">Hello World</h5>
+            <button class="btnremove">Remove all the h5 element</button>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'.domsamplecontainer'</span>)</span>.empty<span id="green">()</span></span></div>
+        <div class="grid description small">The empty() method removes all child nodes and content from the selected
+            elements.</div>
+        <div class="grid example domexample5 small">
+            <div class="domsamplecontainer">
+                <p class="paragraph">Remove all the content when you double click</p>
+            </div>
+        </div>
+        <div class="grid type">Traversing</div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'.isOdd:odd'</span>)</span>.css<span id="green">(<span
+                        id="red">"backgroundColor"</span><span id="dark">,</span><span id="red">
+                        "#DF2E38"</span>)</span></span></div>
+        <div class="grid description small">The :odd selector selects each element with an odd index number (like: 1, 3,
+            5, etc.).
+        </div>
+        <div class="grid example traversingexample1 small">
+            <button id="odd">Mousedown to select all the odd index</button>
+            <div class="hide paragraph isOdd"></div>
+            <div class="paragraph isOdd">Odd</div>
+            <div class="paragraph isOdd">Even</div>
+            <div class="paragraph isOdd">Odd</div>
+            <div class="paragraph isOdd">Even</div>
+            <div class="paragraph isOdd">Odd</div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'.gender'</span>)</span>.filter<span id="green">(</span><span
+                    id="red">'.girl'</span><span id="green">)<span id="dark">.css</span><br><span id="green">(<span
+                            id="red">"backgroundColor"</span><span id="dark">,</span><span id="red">
+                            "pink"</span>)</span></span></div>
+        <div class="grid description small">The filter() method returns elements that match a certain criteria.</div>
+        <div class="grid example traversingexample2 small">
+            <button class="girls">Mousedown to select the Girls</button> <span><button class="boys">Mousedown to select
+                    the
+                    Boy</button></span>
+            <div class="paragraph gender girl">Elizabeth</div>
+            <div class="paragraph gender girl">Sofia</div>
+            <div class="paragraph gender boy">Liam</div>
+            <div class="paragraph gender girl">Charlotte</div>
+            <div class="paragraph gender boy">Benjamin</div>
+            <div class="paragraph gender">Laptop</div>
+        </div>
+        <div class="grid jquery small"><span id="dark">$<span id="green">(<span
+                        id="red">'ul'</span>)</span>.children<span id="green">()</span><span id="dark">.css</span><span
+                    id="green">(<span id="blue">{<span id="red">"color"</span></span><span id="dark">:</span><span
+                        id="red">
+                        "#DF2E38"</span><span id="blue">}</span>)</span></span></div>
+        <div class="grid description small">The children() method returns all direct children of the selected element.
+        </div>
+        <div class="grid example traversingexample3 small">
+            <button id="children">Mousedown to select all children</button>
+            <div id="nomargin">
+                <ul class="paragraph">This is unordered list
+                    <li class="paragraph">this is list item</li>
+                    <li class="paragraph">this is list item</li>
+                    <li class="paragraph">this is list item</li>
+                    <li class="paragraph">this is list item</li>
+                    <li class="paragraph">this is list item</li>
+                </ul>
+                <p class="paragraph margin">this is not a list item</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.6.3.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
